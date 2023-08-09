@@ -75,6 +75,12 @@ Encore
             config: './postcss.config.js'
         }
     })
+
+    .copyFiles({
+        from: './assets/images',
+        to: 'images/[path][name].[hash:9].[ext]',
+        pattern: /\.(png|jpg|jpeg|webp)$/
+    })
 ;
 
 module.exports = Encore.getWebpackConfig();
