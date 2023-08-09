@@ -29,11 +29,6 @@ class MoviesController extends AbstractController
         // count() - SELECT COUNT() FROM movie WHERE id = 9
         // getClassName() - returns class name e.g. "App\Entity\Movie"
 
-        $repository = $this->em->getRepository(Movie::class);
-
-        $movies = $repository->getClassName();
-
-        dd($movies);
         return $this->render('index.html.twig');
     }
 }
