@@ -31,7 +31,7 @@ class MoviesController extends AbstractController
         ]);
     }
     
-    #[Route('/movies/{id}', methods: ['GET'], name: 'movie')]
+    #[Route('/movies/{id}', methods: ['GET'], name: 'show_movie')]
     public function show($id): Response
     {
         $movie = $this->movieRepository->find($id);
