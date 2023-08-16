@@ -18,3 +18,9 @@ yarn-error.log
 ###> mac ###
 .DS_Store
 ###< mac ###
+
+###> images ###
+/public/uploads
+###< images ###
+
+
